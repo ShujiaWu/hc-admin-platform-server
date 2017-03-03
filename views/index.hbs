@@ -1,0 +1,22 @@
+<!-- 插入到head-->
+{{#section 'head'}}
+    <meta name="robots" content="noindex">
+{{/section}}
+
+
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<h2></h2>
+
+<!--引入了一个片段-->
+{{> partial.test }}
+
+<!--插入到body最后-->
+{{#section 'jquery'}}
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script>
+        $('document').ready(function(){
+            $('h2').html('jQuery Works');
+        });
+    </script>
+{{/section}}

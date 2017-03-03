@@ -1,0 +1,31 @@
+{
+  "name": "express-node-starter",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./bin/www",
+    "debug": "set DEBUG=file-watcher:* & node ./bin/www",
+    "cluster": "node ./bin/cluster",
+    "cluster-debug": "set DEBUG=file-watcher:* & node ./bin/cluster",
+    "supervisor": "supervisor ./bin/www",
+    "supervisor-debug": "set DEBUG=file-watcher:* & supervisor ./bin/www",
+    "hotcode": "hotcode ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.1",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "express-history-api-fallback": "^2.1.0",
+    "express-logger": "^0.0.3",
+    "express-session": "^1.15.1",
+    "hbs": "^4.0.1",
+    "jquery": "^3.1.1",
+    "marked": "^0.3.6",
+    "morgan": "^1.8.1",
+    "multer": "^1.3.0",
+    "serve-favicon": "^2.4.0"
+  },
+  "devDependencies": {}
+}
